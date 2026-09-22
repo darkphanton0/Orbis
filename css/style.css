@@ -2245,6 +2245,101 @@ body.no-scroll {
   }
 }
 
+/* --------------------------------------------------------------------------
+   23. Página Sobre
+   -------------------------------------------------------------------------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.about-text {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+.about-text + .about-text {
+  margin-top: var(--space-4);
+}
+
+/* Timeline — linha vertical com conector */
+.timeline {
+  position: relative;
+  max-width: 620px;
+  margin-inline: auto;
+  display: grid;
+  gap: var(--space-6);
+}
+
+/* Conector */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 19px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--primary), var(--accent));
+  opacity: 0.35;
+  border-radius: var(--radius-full);
+}
+
+.timeline__item {
+  position: relative;
+  padding-left: 60px;
+}
+
+.timeline__dot {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 2px solid var(--primary);
+  box-shadow: 0 0 0 4px var(--background);
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.timeline__item:hover .timeline__dot {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--background), 0 0 14px rgba(62, 214, 196, 0.4);
+}
+
+.timeline__step {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.timeline__content h3 {
+  margin-top: var(--space-1);
+  font-size: 1.1rem;
+}
+
+.timeline__content p {
+  margin-top: var(--space-2);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+}
+
+
 
 
 
