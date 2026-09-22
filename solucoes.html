@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Soluções Digitais — Orbis</title>
+  <meta name="description" content="Criação de sites, catálogos e pedidos, agendamento e reservas, sistemas personalizados e SEO: soluções digitais sob medida para a sua empresa.">
+  <meta name="theme-color" content="#0a0e1a">
+
+  <link rel="icon" type="image/svg+xml" href="img/logo/favicon.svg">
+
+  <!-- TODO: definir domínio — descomentar e ajustar o canonical
+  <link rel="canonical" href="https://SEUDOMINIO.com.br/solucoes.html">
+  -->
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Orbis">
+  <meta property="og:title" content="Soluções Digitais — Orbis">
+  <meta property="og:description" content="Sites, catálogos, agendamentos, sistemas e otimização — desenvolvidos sob medida para o seu negócio.">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Scripts -->
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <div class="nav-backdrop" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="index.html" aria-label="Orbis — página inicial">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <circle class="logo-mark__planet" cx="16" cy="16" r="7"/>
+          <ellipse class="logo-mark__orbit" cx="16" cy="16" rx="14" ry="5.5" fill="none" stroke-width="1.5" transform="rotate(-24 16 16)"/>
+          <circle class="logo-mark__sat" cx="28.8" cy="10.3" r="2.2"/>
+        </svg><span class="header__logo-name">rbis</span>
+      </a>
+
+      <nav class="header__nav" id="menu" aria-label="Navegação principal">
+        <ul class="header__menu">
+          <li><a class="header__link" href="index.html">Início</a></li>
+          <li><a class="header__link" href="solucoes.html" aria-current="page">Soluções</a></li>
+          <li><a class="header__link" href="planos.html">Planos</a></li>
+          <li><a class="header__link" href="hospedagem.html">Hospedagem</a></li>
+          <li><a class="header__link" href="sobre.html">Sobre</a></li>
+          <li><a class="header__link" href="contato.html">Contato</a></li>
+        </ul>
+
+        <div class="header__actions">
+          <a class="btn btn--primary btn--sm" href="contato.html">Fale com a Orbis</a>
+          <!-- Ativado pelo main.js quando o número de WhatsApp estiver configurado -->
+          <a class="btn btn--whatsapp btn--sm" data-whatsapp href="#" hidden>Falar no WhatsApp</a>
+        </div>
+      </nav>
+
+      <button class="header__toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="header__toggle-box" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span class="visually-hidden" data-toggle-label>Abrir menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- =========================== HERO DA PÁGINA ======================== -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow" data-reveal>Soluções</span>
+        <h1 data-reveal data-reveal-delay="80">Tecnologia que <span class="text-gradient">resolve</span>, não que complica</h1>
+        <p class="lead" data-reveal data-reveal-delay="160">Da primeira página ao sistema completo: a Orbis desenvolve o que a sua empresa precisa para vender, organizar e crescer.</p>
+        <nav class="solutions-nav" aria-label="Atalhos para as soluções" data-reveal data-reveal-delay="240">
+          <a href="#sites">Criação de sites</a>
+          <a href="#catalogos">Catálogos e pedidos</a>
+          <a href="#agendamento">Agendamento</a>
+          <a href="#sistemas">Sistemas personalizados</a>
+          <a href="#seo">SEO e otimização</a>
+          <a href="#hospedagem">Hospedagem</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ============================== BLOCOS ============================== -->
+    <div class="section">
+      <div class="container">
+
+        <!-- Criação de sites -->
+        <section class="sol-block" id="sites" aria-labelledby="sites-title">
+          <div class="sol-block__content" data-reveal>
+            <span class="sol-block__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15.3 15.3 0 0 1 4 9 15.3 15.3 0 0 1-4 9 15.3 15.3 0 0 1-4-9 15.3 15.3 0 0 1 4-9Z"/></svg>
+            </span>
+            <h2 id="sites-title">Criação de Sites</h2>
+            <p>Sites institucionais modernos e responsivos, construídos para representar bem a sua empresa e gerar contatos.</p>
+            <ul class="sol-list">
+              <li>Design exclusivo, sem aparência de template genérico</li>
+              <li>Experiência perfeita em celular, tablet e computador</li>
+              <li>Estrutura pensada para carregamento rápido</li>
+              <li>SEO local desde a fundação</li>
+            </ul>
+            <div class="sol-block__cta">
+              <a class="btn btn--primary" href="planos.html">Ver planos de site</a>
+            </div>
+          </div>
+          <div class="sol-block__media" data-reveal="right" data-reveal-delay="100">
+            <div class="sol-visual" aria-hidden="true">
+              <span class="sol-chip sol-chip--1">Design responsivo</span>
+              <span class="sol-chip sol-chip--2">Carregamento rápido</span>
+              <span class="sol-chip sol-chip--3">SEO local</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Catálogos e pedidos -->
+        <section class="sol-block sol-block--reverse" id="catalogos" aria-labelledby="catalogos-title">
+          <div class="sol-block__content" data-reveal>
+            <span class="sol-block__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1.2 12H7.2L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+            </span>
+            <h2 id="catalogos-title">Catálogos e Pedidos</h2>
+            <p>Estruturas para apresentar seus produtos com organização e receber pedidos sem complicação.</p>
+            <ul class="sol-list">
+              <li>Catálogo organizado por categorias</li>
+              <li>Recebimento de pedidos direto no WhatsApp</li>
+              <li>Fotos, descrições e destaques bem apresentados</li>
+              <li>Estrutura que facilita atualizações futuras</li>
+            </ul>
+            <div class="sol-block__cta">
+              <a class="btn btn--primary" href="contato.html">Quero um catálogo</a>
+            </div>
+          </div>
+          <div class="sol-block__media" data-reveal="right" data-reveal-delay="100">
+            <div class="sol-visual" aria-hidden="true">
+              <span class="sol-chip sol-chip--1">Pedidos no WhatsApp</span>
+              <span class="sol-chip sol-chip--2">Categorias</span>
+              <span class="sol-chip sol-chip--3">Destaques de produtos</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Agendamento e reservas -->
+        <section class="sol-block" id="agendamento" aria-labelledby="agendamento-title">
+          <div class="sol-block__content" data-reveal>
+            <span class="sol-block__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 3v4"/><path d="M16 3v4"/></svg>
+            </span>
+            <h2 id="agendamento-title">Agendamento e Reservas</h2>
+            <p>Sistemas para empresas que trabalham com horários e reservas, evitando conflitos e mensagens perdidas.</p>
+            <ul class="sol-list">
+              <li>Agenda com horários disponíveis em tempo real</li>
+              <li>Confirmação e lembretes para reduzir faltas</li>
+              <li>Reservas organizadas em um só lugar</li>
+              <li>Painel simples para a equipe gerenciar</li>
+            </ul>
+            <div class="sol-block__cta">
+              <a class="btn btn--primary" href="contato.html">Quero um sistema de agendamento</a>
+            </div>
+          </div>
+          <div class="sol-block__media" data-reveal="right" data-reveal-delay="100">
+            <div class="sol-visual" aria-hidden="true">
+              <span class="sol-chip sol-chip--1">Horários em tempo real</span>
+              <span class="sol-chip sol-chip--2">Lembretes</span>
+              <span class="sol-chip sol-chip--3">Reservas organizadas</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sistemas personalizados -->
+        <section class="sol-block" id="sistemas" aria-labelledby="sistemas-title">
+          <div class="sol-block__content" data-reveal>
+            <span class="sol-block__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3"/><path d="M12 19v3"/><path d="M2 12h3"/><path d="M19 12h3"/><path d="m4.9 4.9 2.1 2.1"/><path d="m17 17 2.1 2.1"/><path d="M19.1 4.9 17 7"/><path d="M7 17l-2.1 2.1"/></svg>
+            </span>
+            <h2 id="sistemas-title">Sistemas Personalizados</h2>
+            <p>Soluções desenvolvidas de acordo com a necessidade do negócio — quando o "quase" das ferramentas prontas não resolve.</p>
+            <ul class="sol-list">
+              <li>Escopo definido junto com você, sem surpresas</li>
+              <li>Área administrativa conforme a operação da empresa</li>
+              <li>Integrações com as ferramentas que já usa</li>
+              <li>Arquitetura preparada para evoluir</li>
+            </ul>
+            <div class="sol-block__cta">
+              <a class="btn btn--primary" href="contato.html">Falar sobre meu projeto</a>
+            </div>
+          </div>
+          <div class="sol-block__media" data-reveal="right" data-reveal-delay="100">
+            <div class="sol-visual" aria-hidden="true">
+              <span class="sol-chip sol-chip--1">Sob medida</span>
+              <span class="sol-chip sol-chip--2">Integrações</span>
+              <span class="sol-chip sol-chip--3">Preparado para escalar</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEO e otimização -->
+        <section class="sol-block sol-block--reverse" id="seo" aria-labelledby="seo-title">
+          <div class="sol-block__content" data-reveal>
+            <span class="sol-block__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="m8 11 2 2 4-4"/></svg>
+            </span>
+            <h2 id="seo-title">SEO e Otimização</h2>
+            <p>Melhorias para desempenho e presença digital — para o seu site ser encontrado e carregar rápido.</p>
+            <ul class="sol-list">
+              <li>Otimização de velocidade e boas práticas técnicas</li>
+              <li>Estrutura de SEO local para buscas na sua região</li>
+              <li>Google Analytics e Search Console (plano Pro+)</li>
+              <li>Ajustes contínuos conforme o serviço contratado</li>
+            </ul>
+            <div class="sol-block__cta">
+              <a class="btn btn--primary" href="contato.html">Otimizar meu site</a>
+            </div>
+          </div>
+          <div class="sol-block__media" data-reveal="right" data-reveal-delay="100">
+            <div class="sol-visual" aria-hidden="true">
+              <span class="sol-chip sol-chip--1">Velocidade</span>
+              <span class="sol-chip sol-chip--2">SEO local</span>
+              <span class="sol-chip sol-chip--3">Métricas</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Faixa de hospedagem -->
+        <aside class="hosting-strip" id="hospedagem" data-reveal>
+          <div>
+            <h2>Precisa de hospedagem também?</h2>
+            <p>A Orbis oferece a infraestrutura para manter o seu projeto online — com SSL, backup conforme o plano e suporte da nossa equipe.</p>
+          </div>
+          <div class="hosting-strip__cta">
+            <a class="btn btn--outline" href="hospedagem.html">Conhecer hospedagem</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- ============================ CTA FINAL ============================ -->
+    <section class="section cta-final" aria-labelledby="cta-final-title">
+      <div class="container">
+        <div class="cta-final__inner" data-reveal>
+          <h2 id="cta-final-title">Não encontrou exatamente o que precisa?</h2>
+          <p>Descreva o seu desafio. A Orbis avalia e propõe a solução mais simples que resolve de verdade.</p>
+          <div class="cta-final__actions">
+            <a class="btn btn--primary btn--lg" href="contato.html">Solicitar orçamento</a>
+            <!-- Ativado pelo main.js quando o número de WhatsApp estiver configurado -->
+            <a class="btn btn--whatsapp btn--lg" data-whatsapp href="#" hidden>Falar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="footer__logo" href="index.html" aria-label="Orbis — página inicial">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+              <circle class="logo-mark__planet" cx="16" cy="16" r="7"/>
+              <ellipse class="logo-mark__orbit" cx="16" cy="16" rx="14" ry="5.5" fill="none" stroke-width="1.5" transform="rotate(-24 16 16)"/>
+              <circle class="logo-mark__sat" cx="28.8" cy="10.3" r="2.2"/>
+            </svg><span class="footer__logo-name">rbis</span>
+          </a>
+          <p>Criação de sites, hospedagem e soluções digitais para empresas que querem crescer no mundo digital.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Navegação do rodapé">
+          <h2 class="footer__title">Navegação</h2>
+          <ul class="footer__list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="solucoes.html">Soluções</a></li>
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="hospedagem.html">Hospedagem</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h2 class="footer__title">Serviços</h2>
+          <ul class="footer__list">
+            <li><a href="solucoes.html">Criação de sites</a></li>
+            <li><a href="hospedagem.html">Hospedagem</a></li>
+            <li><a href="solucoes.html#sistemas">Sistemas</a></li>
+            <li><a href="contato.html">Manutenção</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h2 class="footer__title">Contato</h2>
+          <ul class="footer__list">
+            <!-- Preenchidos pelo main.js quando WhatsApp/e-mail estiverem configurados -->
+            <li data-contact="whatsapp">A definir</li>
+            <li data-contact="email">A definir</li>
+          </ul>
+          <div class="footer__social">
+            <!-- TODO: substituir href="#" pelos perfis reais quando existirem -->
+            <a class="social__link" href="#" aria-label="Instagram da Orbis (link a definir)" title="Link a definir">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <rect x="3" y="3" width="18" height="18" rx="5"/>
+                <circle cx="12" cy="12" r="4.2"/>
+                <circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a class="social__link" href="#" aria-label="LinkedIn da Orbis (link a definir)" title="Link a definir">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                <path d="M4.98 3.5a2.49 2.49 0 1 1-.02 4.98 2.49 2.49 0 0 1 .02-4.98ZM3 9h4v12H3V9Zm6 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.5c0-1.31-.02-3-1.83-3-1.83 0-2.11 1.43-2.11 2.9V21H9V9Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-footer-year>2026</span> Orbis. Todos os direitos reservados.</p>
+        <p class="footer__tagline">Criação de sites · Hospedagem · Soluções digitais</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

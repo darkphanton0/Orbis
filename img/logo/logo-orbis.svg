@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 56" role="img" aria-label="Orbis">
+  <circle cx="24" cy="28" r="12" fill="#3F5EF5"/>
+  <ellipse cx="24" cy="28" rx="23" ry="9" fill="none" stroke="#8FA3FF" stroke-width="2" transform="rotate(-24 24 28)"/>
+  <circle cx="45" cy="18.6" r="3.5" fill="#3ED6C4"/>
+  <text x="58" y="40" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="0.5" fill="#EAF0FA">orbis</text>
+</svg>

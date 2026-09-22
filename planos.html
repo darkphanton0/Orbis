@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Planos de Criação de Sites — Orbis</title>
+  <meta name="description" content="Conheça os planos Orbis Essencial, Pro e Business: sites profissionais com recursos que evoluem junto com a sua empresa. Compare os planos.">
+  <meta name="theme-color" content="#0a0e1a">
+
+  <link rel="icon" type="image/svg+xml" href="img/logo/favicon.svg">
+
+  <!-- TODO: definir domínio — descomentar e ajustar o canonical
+  <link rel="canonical" href="https://SEUDOMINIO.com.br/planos.html">
+  -->
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Orbis">
+  <meta property="og:title" content="Planos de Criação de Sites — Orbis">
+  <meta property="og:description" content="Essencial, Pro ou Business: escolha o ponto de partida digital da sua empresa.">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Scripts -->
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <div class="nav-backdrop" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="index.html" aria-label="Orbis — página inicial">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <circle class="logo-mark__planet" cx="16" cy="16" r="7"/>
+          <ellipse class="logo-mark__orbit" cx="16" cy="16" rx="14" ry="5.5" fill="none" stroke-width="1.5" transform="rotate(-24 16 16)"/>
+          <circle class="logo-mark__sat" cx="28.8" cy="10.3" r="2.2"/>
+        </svg><span class="header__logo-name">rbis</span>
+      </a>
+
+      <nav class="header__nav" id="menu" aria-label="Navegação principal">
+        <ul class="header__menu">
+          <li><a class="header__link" href="index.html">Início</a></li>
+          <li><a class="header__link" href="solucoes.html">Soluções</a></li>
+          <li><a class="header__link" href="planos.html" aria-current="page">Planos</a></li>
+          <li><a class="header__link" href="hospedagem.html">Hospedagem</a></li>
+          <li><a class="header__link" href="sobre.html">Sobre</a></li>
+          <li><a class="header__link" href="contato.html">Contato</a></li>
+        </ul>
+
+        <div class="header__actions">
+          <a class="btn btn--primary btn--sm" href="contato.html">Fale com a Orbis</a>
+          <!-- Ativado pelo main.js quando o número de WhatsApp estiver configurado -->
+          <a class="btn btn--whatsapp btn--sm" data-whatsapp href="#" hidden>Falar no WhatsApp</a>
+        </div>
+      </nav>
+
+      <button class="header__toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="header__toggle-box" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span class="visually-hidden" data-toggle-label>Abrir menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- =========================== HERO DA PÁGINA ======================== -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow" data-reveal>Planos</span>
+        <h1 data-reveal data-reveal-delay="80">Planos para cada fase da <span class="text-gradient">sua empresa</span></h1>
+        <p class="lead" data-reveal data-reveal-delay="160">Do primeiro site profissional à solução completa com sistemas: escolha o ponto de partida e evolua no seu ritmo.</p>
+        <div class="hero__cta" data-reveal data-reveal-delay="240">
+          <a class="btn btn--primary" href="#comparativo">Comparar planos</a>
+          <a class="btn btn--outline" href="contato.html">Falar com a Orbis</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== PLANOS ============================== -->
+    <section class="section" aria-labelledby="plans-title">
+      <div class="container">
+        <div class="plans-grid">
+          <article class="card plan" data-reveal>
+            <h2 class="plan__name" id="plans-title">Orbis Essencial</h2>
+            <p class="plan__desc">Presença digital profissional para sua empresa.</p>
+            <!-- TODO: definir preço — substituir "Sob consulta" quando houver valor -->
+            <div class="plan__price">
+              <span class="plan__price-label">Investimento</span>
+              <span class="plan__price-value">Sob consulta</span>
+            </div>
+            <ul class="check-list">
+              <li>Página inicial</li>
+              <li>Sobre a empresa</li>
+              <li>Serviços/produtos</li>
+              <li>Contato</li>
+              <li>WhatsApp</li>
+              <li>Redes sociais</li>
+              <li>Mapa/localização</li>
+              <li>Design responsivo</li>
+              <li>SEO local básico</li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="contato.html">Quero o Essencial</a>
+          </article>
+
+          <article class="card plan plan--featured" data-reveal data-reveal-delay="80">
+            <span class="badge badge--primary plan__badge">Recomendado</span>
+            <h2 class="plan__name">Orbis Pro<span class="visually-hidden"> — plano recomendado</span></h2>
+            <p class="plan__desc">Mais visibilidade e ferramentas para empresas em crescimento.</p>
+            <!-- TODO: definir preço — substituir "Sob consulta" quando houver valor -->
+            <div class="plan__price">
+              <span class="plan__price-label">Investimento</span>
+              <span class="plan__price-value">Sob consulta</span>
+            </div>
+            <p class="plan__more">Tudo do Essencial, mais:</p>
+            <ul class="check-list">
+              <li>Mais páginas</li>
+              <li>Catálogo</li>
+              <li>Galeria</li>
+              <li>FAQ</li>
+              <li>Botões estratégicos de WhatsApp</li>
+              <li>Formulário personalizado</li>
+              <li>SEO local avançado</li>
+              <li>Google Maps</li>
+              <li>Integração com redes sociais</li>
+              <li>Otimização de velocidade</li>
+              <li>Google Analytics</li>
+              <li>Google Search Console</li>
+              <li>Estrutura preparada para campanhas</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="contato.html">Quero o Pro</a>
+          </article>
+
+          <article class="card plan" data-reveal data-reveal-delay="160">
+            <h2 class="plan__name">Orbis Business</h2>
+            <p class="plan__desc">Uma solução digital completa para empresas que precisam de mais.</p>
+            <!-- TODO: definir preço — substituir "Sob consulta" quando houver valor -->
+            <div class="plan__price">
+              <span class="plan__price-label">Investimento</span>
+              <span class="plan__price-value">Sob consulta</span>
+            </div>
+            <p class="plan__more">Tudo do Pro, mais:</p>
+            <ul class="check-list">
+              <li>Sistema de pedidos</li>
+              <li>Agendamento</li>
+              <li>Área administrativa</li>
+              <li>Catálogo gerenciável</li>
+              <li>Reservas</li>
+              <li>WhatsApp</li>
+              <li>Cupons</li>
+              <li>Blog/notícias</li>
+              <li>Área de clientes</li>
+              <li>Integrações externas</li>
+              <li>Automação de determinadas tarefas</li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="contato.html">Falar sobre meu projeto</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== COMPARATIVO =========================== -->
+    <section class="section section--alt" id="comparativo" aria-labelledby="compare-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Comparativo</span>
+          <h2 class="section-title" id="compare-title">Compare os planos</h2>
+          <p class="section-sub">Tudo que está incluído em cada plano, lado a lado.</p>
+        </div>
+
+        <div class="compare-wrap" data-reveal>
+          <table class="compare">
+            <thead>
+              <tr>
+                <th scope="col">Recurso</th>
+                <th scope="col">Essencial</th>
+                <th scope="col">Pro</th>
+                <th scope="col">Business</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Página inicial</th>
+                <td data-plan="Essencial"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Pro"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Sobre a empresa</th>
+                <td data-plan="Essencial"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Pro"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Serviços/produtos</th>
+                <td data-plan="Essencial"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Pro"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Contato</th>
+                <td data-plan="Essencial"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Pro"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">WhatsApp</th>
+                <td data-plan="Essencial"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Pro"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Redes sociais</th>
+                <td data-plan="Essencial"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Pro"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Mapa</th>
+                <td data-plan="Essencial"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Pro"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Responsivo</th>
+                <td data-plan="Essencial"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Pro"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">SEO local</th>
+                <td data-plan="Essencial">Básico</td>
+                <td data-plan="Pro">Avançado</td>
+                <td data-plan="Business">Avançado</td>
+              </tr>
+              <tr>
+                <th scope="row">Catálogo</th>
+                <td data-plan="Essencial"><span class="mark mark--no">—</span></td>
+                <td data-plan="Pro"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Galeria</th>
+                <td data-plan="Essencial"><span class="mark mark--no">—</span></td>
+                <td data-plan="Pro"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">FAQ</th>
+                <td data-plan="Essencial"><span class="mark mark--no">—</span></td>
+                <td data-plan="Pro"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Analytics</th>
+                <td data-plan="Essencial"><span class="mark mark--no">—</span></td>
+                <td data-plan="Pro"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Search Console</th>
+                <td data-plan="Essencial"><span class="mark mark--no">—</span></td>
+                <td data-plan="Pro"><span class="mark mark--yes">✓</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Sistema de pedidos</th>
+                <td data-plan="Essencial"><span class="mark mark--no">—</span></td>
+                <td data-plan="Pro"><span class="mark mark--no">—</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Agendamento</th>
+                <td data-plan="Essencial"><span class="mark mark--no">—</span></td>
+                <td data-plan="Pro"><span class="mark mark--no">—</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Área administrativa</th>
+                <td data-plan="Essencial"><span class="mark mark--no">—</span></td>
+                <td data-plan="Pro"><span class="mark mark--no">—</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Área de clientes</th>
+                <td data-plan="Essencial"><span class="mark mark--no">—</span></td>
+                <td data-plan="Pro"><span class="mark mark--no">—</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Cupons</th>
+                <td data-plan="Essencial"><span class="mark mark--no">—</span></td>
+                <td data-plan="Pro"><span class="mark mark--no">—</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Automação</th>
+                <td data-plan="Essencial"><span class="mark mark--no">—</span></td>
+                <td data-plan="Pro"><span class="mark mark--no">—</span></td>
+                <td data-plan="Business"><span class="mark mark--yes">✓</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="compare-note" data-reveal>
+          Precisa de um recurso que não está na lista? A Orbis também monta <strong>soluções personalizadas</strong>.
+          <a href="contato.html">Fale com a gente</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================ CTA FINAL ============================ -->
+    <section class="section cta-final" aria-labelledby="cta-final-title">
+      <div class="container">
+        <div class="cta-final__inner" data-reveal>
+          <h2 id="cta-final-title">Ainda com dúvidas sobre qual plano escolher?</h2>
+          <p>Conte o que a sua empresa precisa. A gente indica o caminho mais simples — sem empurrar o que você não precisa.</p>
+          <div class="cta-final__actions">
+            <a class="btn btn--primary btn--lg" href="contato.html">Solicitar orçamento</a>
+            <!-- Ativado pelo main.js quando o número de WhatsApp estiver configurado -->
+            <a class="btn btn--whatsapp btn--lg" data-whatsapp href="#" hidden>Falar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="footer__logo" href="index.html" aria-label="Orbis — página inicial">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+              <circle class="logo-mark__planet" cx="16" cy="16" r="7"/>
+              <ellipse class="logo-mark__orbit" cx="16" cy="16" rx="14" ry="5.5" fill="none" stroke-width="1.5" transform="rotate(-24 16 16)"/>
+              <circle class="logo-mark__sat" cx="28.8" cy="10.3" r="2.2"/>
+            </svg><span class="footer__logo-name">rbis</span>
+          </a>
+          <p>Criação de sites, hospedagem e soluções digitais para empresas que querem crescer no mundo digital.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Navegação do rodapé">
+          <h2 class="footer__title">Navegação</h2>
+          <ul class="footer__list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="solucoes.html">Soluções</a></li>
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="hospedagem.html">Hospedagem</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h2 class="footer__title">Serviços</h2>
+          <ul class="footer__list">
+            <li><a href="solucoes.html">Criação de sites</a></li>
+            <li><a href="hospedagem.html">Hospedagem</a></li>
+            <li><a href="solucoes.html#sistemas">Sistemas</a></li>
+            <li><a href="contato.html">Manutenção</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h2 class="footer__title">Contato</h2>
+          <ul class="footer__list">
+            <!-- Preenchidos pelo main.js quando WhatsApp/e-mail estiverem configurados -->
+            <li data-contact="whatsapp">A definir</li>
+            <li data-contact="email">A definir</li>
+          </ul>
+          <div class="footer__social">
+            <!-- TODO: substituir href="#" pelos perfis reais quando existirem -->
+            <a class="social__link" href="#" aria-label="Instagram da Orbis (link a definir)" title="Link a definir">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <rect x="3" y="3" width="18" height="18" rx="5"/>
+                <circle cx="12" cy="12" r="4.2"/>
+                <circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a class="social__link" href="#" aria-label="LinkedIn da Orbis (link a definir)" title="Link a definir">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                <path d="M4.98 3.5a2.49 2.49 0 1 1-.02 4.98 2.49 2.49 0 0 1 .02-4.98ZM3 9h4v12H3V9Zm6 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.5c0-1.31-.02-3-1.83-3-1.83 0-2.11 1.43-2.11 2.9V21H9V9Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-footer-year>2026</span> Orbis. Todos os direitos reservados.</p>
+        <p class="footer__tagline">Criação de sites · Hospedagem · Soluções digitais</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* ==========================================================================
+   ORBIS — animations.css
+   Animações: reveal on scroll e composição do hero
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Reveal on scroll (ativado via IntersectionObserver em js/animations.js)
+   O estado oculto só vale quando <html> tem a classe .js — sem JavaScript,
+   todo o conteúdo permanece visível.
+   -------------------------------------------------------------------------- */
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 600ms var(--ease),
+    transform 600ms var(--ease);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.js [data-reveal="left"] {
+  transform: translateX(-24px);
+}
+
+.js [data-reveal="right"] {
+  transform: translateX(24px);
+}
+
+.js [data-reveal="scale"] {
+  transform: scale(0.96);
+}
+
+.js [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* --------------------------------------------------------------------------
+   2. Keyframes
+   -------------------------------------------------------------------------- */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. Movimento reduzido — conteúdo sempre visível, sem animação
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .js [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
